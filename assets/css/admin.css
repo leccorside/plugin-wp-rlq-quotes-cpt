@@ -1,0 +1,54 @@
+.rlq-meta-box {
+    margin-top: 10px;
+}
+
+.rlq-field-group {
+    margin-bottom: 20px;
+}
+
+.rlq-field-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.rlq-image-preview-wrapper {
+    margin-bottom: 10px;
+}
+
+.half-width {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+
+.half-width:last-child {
+    margin-right: 0;
+}
+
+.rlq-group-wrapper {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.rlq-group-wrapper h4 {
+    margin-top: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.rlq-sub-field {
+    margin-bottom: 10px;
+}
+
+.rlq-sub-field label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+.rlq-sub-field input[type="text"] {
+    width: 100%;
+}
