@@ -1,0 +1,667 @@
+/* CSS for RLQ Review Page */
+.rlq-review-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 80px 0 50px 0;
+    font-family: "Montserrat", Sans-serif;
+    color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Multi-Step Form Styles */
+.rlq-multi-step-container {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin-bottom: 30px;
+    min-height: 500px;
+}
+
+.rlq-ms-left-panel {
+    flex: 1;
+    background-color: #f0f4f8;
+    /* Light blue/grey bg */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rlq-ms-left-panel h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.rlq-ms-left-panel p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.rlq-ms-illustration {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rlq-ms-right-panel {
+    flex: 1.2;
+    padding: 40px 60px;
+    background-color: #fff;
+}
+
+.rlq-ms-right-panel h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Stepper */
+.rlq-stepper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rlq-stepper-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.rlq-stepper-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #0088cc;
+    /* Blue progress */
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.rlq-step-indicator {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.rlq-step-indicator.active {
+    border-color: #0088cc;
+    color: #0088cc;
+}
+
+.rlq-step-indicator.completed {
+    border-color: #0088cc;
+    background-color: #0088cc;
+    color: #fff;
+}
+
+/* Form Fields */
+.rlq-form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.rlq-form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.rlq-form-group.half-width {
+    width: calc(50% - 10px);
+}
+
+.rlq-form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    box-sizing: border-box;
+    /* Important for width check */
+}
+
+.rlq-form-control:focus {
+    border-color: #0088cc;
+}
+
+.rlq-form-control.error {
+    border-color: #e74c3c;
+}
+
+/* Buttons */
+.rlq-form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.rlq-btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.rlq-btn.primary {
+    background-color: #0077b6;
+    /* Specific blue */
+    color: #fff;
+    border-color: #0077b6;
+}
+
+.rlq-btn.primary:hover {
+    background-color: #023e8a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .rlq-multi-step-container {
+        flex-direction: column;
+    }
+
+    .rlq-ms-left-panel,
+    .rlq-ms-right-panel {
+        flex: auto;
+        padding: 20px;
+    }
+
+    .rlq-form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .rlq-form-group.half-width {
+        width: 100%;
+    }
+}
+
+
+.banner-single {
+    background-image: url("https://leccorside.com.br/riselifequotes/wp-content/uploads/2026/02/bg01.webp");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 50px;
+}
+
+.banner-single-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.rlq-review-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.rlq-header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rlq-company-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.rlq-header-meta h1 {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+}
+
+.rlq-view-rates-btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.rlq-view-rates-btn:hover {
+    background-color: #004494;
+    color: white;
+}
+
+/* Layout Grid */
+.rlq-sidebar-left {
+    flex: 0 0 250px;
+}
+
+.rlq-main-content {
+    flex: 1;
+    min-width: 0;
+    /* Fix flexbox overflow issues */
+}
+
+.rlq-sidebar-right {
+    flex: 0 0 300px;
+}
+
+/* Left Sidebar (Sticky) */
+.rlq-sticky-menu {
+    position: sticky;
+    top: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.rlq-sticky-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rlq-sticky-menu li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.rlq-sticky-menu li:last-child {
+    border-bottom: none;
+}
+
+.rlq-sticky-menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    display: block;
+    transition: color 0.3s;
+}
+
+.rlq-sticky-menu a:hover,
+.rlq-sticky-menu a.active {
+    color: #0056b3;
+    padding-left: 5px;
+}
+
+/* Main Content Sections */
+.rlq-section {
+    margin-bottom: 40px;
+    scroll-margin-top: 100px;
+    /* Offset for sticky header if exists */
+}
+
+.rlq-section h2 {
+    font-size: 22px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Pros & Cons */
+.rlq-pros-cons-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.rlq-pros,
+.rlq-cons {
+    flex: 1;
+}
+
+.rlq-pros h3,
+.rlq-cons h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rlq-pros h3 {
+    color: #27ae60;
+}
+
+.rlq-cons h3 {
+    color: #c0392b;
+}
+
+.rlq-pros ul,
+.rlq-cons ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.rlq-pros li {
+    list-style-type: check;
+    color: #27ae60;
+}
+
+.rlq-cons li {
+    list-style-type: x;
+    color: #c0392b;
+}
+
+.rlq-pros li span,
+.rlq-cons li span {
+    color: #333;
+}
+
+/* Ratings Box inside Content */
+.rlq-rating-breakdown {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.rlq-rating-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.rlq-rating-val {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* Right Sidebar Elements */
+.rlq-widget {
+    margin-bottom: 30px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.rlq-widget-title {
+    font-size: 18px;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Compare Providers */
+.rlq-compare-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.rlq-compare-logo {
+    width: 80px;
+    height: auto;
+}
+
+.rlq-compare-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    background: #eee;
+    color: #333;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.rlq-compare-btn:hover {
+    background: #ddd;
+}
+
+.custom-compare-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #0056b3;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Latest Posts */
+.rlq-recent-post {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.rlq-post-thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.rlq-post-title {
+    font-size: 14px;
+    margin: 0;
+}
+
+.rlq-post-title a {
+    text-decoration: none;
+    color: #333;
+}
+
+.rlq-read-more {
+    font-size: 12px;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .rlq-sidebar-left,
+    .rlq-sidebar-right {
+        flex: 100%;
+        order: 2;
+    }
+
+    .rlq-main-content {
+        flex: 100%;
+        order: 1;
+    }
+
+    /* Header Mobile Fix */
+    .rlq-review-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .rlq-header-left {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .rlq-company-logo {
+        max-width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .rlq-header-right {
+        width: 100%;
+    }
+
+    .rlq-view-rates-btn {
+        display: block;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .rlq-sticky-menu {
+        position: static;
+    }
+
+    .rlq-pros-cons-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* Slider Styles */
+.rlq-slider-widget {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    background: transparent;
+}
+
+.rlq-slider-container {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.rlq-slider-item {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.rlq-slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.rlq-slider-prev,
+.rlq-slider-next {
+    cursor: pointer;
+    color: #999;
+    font-size: 18px;
+    transition: all 0.3s;
+    background: #f0f0f0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.rlq-slider-prev:hover,
+.rlq-slider-next:hover {
+    color: #333;
+    background: #e0e0e0;
+    transform: scale(1.1);
+}
+
+/* Button style adjustment for slider */
+.rlq-slider-item .rlq-view-rates-btn {
+    background-color: #0056b3;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: background-color 0.3s;
+}
+
+.rlq-slider-item .rlq-view-rates-btn:hover {
+    background-color: #004494;
+}
+
+.rlq-btn.rlq-prev-step {
+    color: #006194 !important;
+    border-color: #006194 !important;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .banner-single {
+        padding: 20px 20px;
+        background-position: -200px 0;
+    }
+
+    .banner-single-content {
+        min-height: 130px;
+        max-width: 250px;
+        margin: 0;
+
+    }
+
+    .banner-single-content h1 {
+        font-size: 20px;
+    }
+
+    .rlq-meta-info {
+        font-size: 12px;
+    }
+
+    .rlq-review-container {
+        padding: 20px 20px;
+    }
+}

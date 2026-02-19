@@ -1,0 +1,952 @@
+/* CSS for RLQ Comparison List Shortcode */
+.rlq-comparison-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Montserrat", Sans-serif;
+    color: #333;
+}
+
+/* Filter Section */
+.rlq-filter-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    background: #f0f4f8;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.rlq-filter-label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#rlq-age-filter {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Quote Card General */
+.rlq-quote-card {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.rlq-card-body {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Rank Column */
+.rlq-col-rank {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #999;
+    position: absolute;
+    left: -16px;
+    top: 20%;
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo Column */
+.rlq-col-logo {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    /* Align left */
+}
+
+.rlq-col-logo img {
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+}
+
+.rlq-card-title {
+    margin: 0;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-bottom: 15px;
+}
+
+/* Description Column */
+.rlq-col-desc {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #eee;
+    /* Separator optional, but helps structure */
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+}
+
+.rlq-col-desc h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.rlq-highlight-sm {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Featured List Styling (Common for both types if needed, but primarily #1) */
+.rlq-featured-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rlq-featured-list li {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #444;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.4;
+}
+
+.rlq-featured-list li:before {
+    content: '\2713';
+    /* Checkmark */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Rating Column */
+.rlq-col-rating {
+    width: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rlq-col-rating1 {
+    width: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rlq-rating-circle {
+    width: 75px;
+    height: 75px;
+    border: 3px solid #0056b3;
+    /* Blue border */
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    flex-shrink: 0;
+}
+
+.rlq-rating-text {
+    font-size: 10px;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+
+.rlq-rating-num {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1;
+}
+
+.rlq-stars {
+    color: #f1c40f;
+    /* Gold stars */
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.rlq-reviews-count {
+    font-size: 10px;
+    color: #777;
+    white-space: nowrap;
+}
+
+/* Action Column */
+.rlq-col-action {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* Adjust padding to align button properly, tooltip floats above */
+    padding-top: 10px;
+}
+
+.rlq-view-rates-btn-home {
+    background: #0056b3;
+    /* Dark blue button */
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    transition: background 0.3s;
+}
+
+.rlq-view-rates-btn-home:hover {
+    background: #004494;
+    color: #fff;
+}
+
+.rlq-read-review-link {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #777;
+    text-decoration: none;
+}
+
+.rlq-read-review-link:hover {
+    text-decoration: underline;
+}
+
+/* Featured Card Specifics Order #1 */
+.rlq-featured-card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* Slightly stronger shadow */
+    margin-top: 20px;
+    /* Space for badge */
+}
+
+/* Fast Application Badge - Floating Top Left */
+.rlq-featured-badge {
+    position: absolute;
+    /* Move above border */
+    left: 20px;
+    /* Align with left border */
+    background-color: #007bff;
+    /* Bright blue */
+    color: #fff;
+    padding: 6px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 0 0 6px 0;
+    /* Tab style */
+    z-index: 10;
+}
+
+/* Fire Icon - Floating Top Right */
+.rlq-fire-icon {
+    position: absolute;
+    /* Move above border */
+    right: 0px;
+    /* Align with right border */
+    background: #0056b3;
+    width: 30px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 0 0 0 6px;
+}
+
+.rlq-fire-icon i {
+    font-size: 14px;
+}
+
+/* Visitor Tooltip */
+.rlq-visitor-tooltip {
+    position: absolute;
+    bottom: 100%;
+    /* Above the action column content */
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 11px;
+    color: #333;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 200px;
+    margin-bottom: 0;
+    z-index: 20;
+    line-height: 1.3;
+}
+
+.rlq-visitor-tooltip i {
+    color: #007bff;
+    font-size: 16px;
+    float: left;
+    margin-right: 8px;
+    padding-top: 2px;
+}
+
+.rlq-tooltip-arrow {
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -6px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #fff;
+}
+
+/* Border arrow helper */
+.rlq-tooltip-arrow:before {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #ddd;
+    z-index: -1;
+}
+
+/* Secure Future Section */
+.rlq-secure-future-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #eef2f5;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.rlq-sf-logo {
+    font-size: 40px;
+    color: #2c3e50;
+    flex: 0 0 60px;
+    text-align: center;
+}
+
+.rlq-sf-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.rlq-sf-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.rlq-sf-action {
+    flex: 0 0 160px;
+    text-align: right;
+}
+
+.rlq-sf-btn {
+    background: #0056b3;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Must Reads Section */
+.rlq-home-widget {
+    margin-top: 40px;
+}
+
+.rlq-home-widget-title {
+    font-size: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.rlq-must-reads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.rlq-must-read-item {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+}
+
+.rlq-mr-thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.rlq-mr-content h4 {
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.rlq-mr-content h4 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.rlq-mr-excerpt {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.rlq-read-more {
+    font-size: 12px;
+    color: #0056b3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .rlq-card-body {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .rlq-col-rank,
+    .rlq-col-logo,
+    .rlq-col-desc,
+    .rlq-col-rating,
+    .rlq-col-rating1,
+    .rlq-col-action {
+        width: 100%;
+        text-align: center;
+    }
+
+    .rlq-secure-future-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rlq-sf-action {
+        text-align: center;
+        width: 100%;
+    }
+
+    .rlq-filter-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #rlq-age-filter {
+        width: 100%;
+    }
+
+    .rlq-must-read-item {
+        flex-direction: column;
+    }
+
+    .rlq-mr-thumb {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+/* Home Text Section */
+.rlq-home-text-section {
+    background: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    color: #555;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Review Highlights Card (Bottom of List) */
+.rlq-review-highlights-card {
+    background: #eef2f5;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.rlq-highlights-main-title {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.rlq-highlights-container {
+    padding: 0;
+}
+
+/* Highlights Header */
+.rlq-highlights-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.rlq-hh-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rlq-hh-logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.rlq-hh-logo h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.rlq-hh-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.rlq-hh-rating {
+    text-align: right;
+}
+
+.rlq-hh-rating .rlq-stars {
+    font-size: 14px;
+    color: #0056b3;
+    /* Blue stars in image header */
+    margin-bottom: 2px;
+}
+
+.rlq-hh-rating .rlq-stars i {}
+
+.rlq-hh-score {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.rlq-hh-reviews {
+    display: block;
+    font-size: 11px;
+    color: #777;
+}
+
+/* Body: 2 Columns */
+.rlq-highlights-body {
+    display: flex;
+    gap: 30px;
+}
+
+.rlq-hb-left {
+    flex: 2;
+}
+
+.rlq-hb-right {
+    flex: 1;
+}
+
+/* Metrics Items */
+.rlq-metric-item {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Filter Section */
+.rlq-filter-section {
+    background-color: #fff;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    border-left: 5px solid #0a1f44;
+    /* Dark blue border */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    /* Optional subtle shadow */
+}
+
+.rlq-filter-header h3 {
+    color: #0a1f44;
+    font-size: 24px;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+}
+
+.rlq-filter-header p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+.rlq-filter-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.rlq-filter-input label {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.rlq-select-wrapper {
+    position: relative;
+    min-width: 250px;
+}
+
+.rlq-select-wrapper select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+}
+
+.rlq-select-wrapper select:focus {
+    border-color: #0a1f44;
+}
+
+/* Mobile responsive for filter */
+@media (max-width: 768px) {
+    .rlq-filter-section {
+        flex-direction: column;
+        align-items: flex-start;
+        border-left-width: 4px;
+        padding: 15px;
+    }
+
+    .rlq-filter-header {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .rlq-filter-input {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .rlq-select-wrapper {
+        width: 100%;
+    }
+}
+
+.rlq-metric-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rlq-metric-icon {
+    margin-right: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+.rlq-metric-title {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+    flex: 1;
+}
+
+.rlq-metric-badge,
+.rlq-metric-badge-low {
+    background: #e6f9f0;
+    /* Light green bg */
+    color: #27ae60;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.rlq-metric-badge-low {
+    /* If lower rating has diff color? Image shows 9.0 also green, maybe light green */
+    background: #e6f9f0;
+    color: #27ae60;
+}
+
+.rlq-metric-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Pros and Cons Box */
+.rlq-pros-box,
+.rlq-cons-box {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.rlq-pros-box h4,
+.rlq-cons-box h4 {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+}
+
+.rlq-pros-box h4 i {
+    color: #27ae60;
+    margin-right: 5px;
+}
+
+.rlq-cons-box h4 i {
+    color: #e74c3c;
+    margin-right: 5px;
+}
+
+.rlq-pros-content ul,
+.rlq-cons-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.rlq-pros-content li,
+.rlq-cons-content li {
+    font-size: 12px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    padding-left: 18px;
+    position: relative;
+    color: #555;
+}
+
+.rlq-pros-content li:before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    /* Blue check as per image pros? Or green? Image validation says blue ticks */
+    font-weight: bold;
+}
+
+.rlq-cons-content li:before {
+    content: '\00D7';
+    /* Multiplication sign / cross */
+    position: absolute;
+    left: 0;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 14px;
+    top: 0;
+}
+
+/* Shared Widget Styles for [rlq_top_providers] */
+.rlq-widget {
+    margin-bottom: 30px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    font-family: inherit;
+    /* Ensure font consistency */
+}
+
+.rlq-widget-title {
+    font-size: 18px;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #333;
+}
+
+.rlq-compare-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.rlq-compare-logo {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+.rlq-compare-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    background: #eee;
+    color: #333;
+    text-decoration: none;
+    border-radius: 3px;
+    display: inline-block;
+    /* Ensure padding works */
+}
+
+.rlq-compare-btn:hover {
+    background: #ddd;
+}
+
+.custom-compare-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #0056b3;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.custom-compare-btn:hover {
+    background: #004494;
+}
+
+left: 0;
+color: #007bff;
+/* Blue cross in image? Image shows text "Cons" cross. Let's use blue for consistent UI or red/classic */
+font-weight: bold;
+font-size: 14px;
+top: -1px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .rlq-highlights-body {
+        flex-direction: column;
+    }
+
+    .rlq-col-rank {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .rlq-featured-list li {
+        text-align: left;
+    }
+
+    .rlq-col-rating1 {
+        margin-bottom: 35px;
+    }
+
+    /* Mobile Header Review Highlights */
+    .rlq-highlights-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+
+    .rlq-hh-logo {
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+    }
+
+    .rlq-hh-logo img {
+        max-width: 100%;
+    }
+
+    .rlq-hh-title {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .rlq-hh-rating {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .rlq-hh-rating .rlq-stars {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    .rlq-hh-score {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .rlq-hh-reviews {
+        font-size: 11px;
+        display: inline-block;
+        /* Keep on same line */
+    }
+
+    .rlq-hh-logo {
+        display: block !important;
+    }
+
+}
