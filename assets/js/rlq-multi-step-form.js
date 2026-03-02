@@ -1,7 +1,75 @@
 jQuery(document).ready(function ($) {
-    var currentStep = 1;
     var totalSteps = 17;
     var form = $('#rlq-multi-step-form');
+    var storageKey = 'rlq_quote_form_data';
+
+    // Load saved data or start fresh
+    var savedData = localStorage.getItem(storageKey);
+    var savedState = savedData ? JSON.parse(savedData) : { step: 1, formData: {} };
+    var currentStep = savedState.step || 1;
+
+    function saveProgress() {
+        var dataToSave = {
+            step: currentStep,
+            formData: {}
+        };
+        
+        // Loop through all inputs except the final step/buttons to save state
+        form.find('input, select').each(function() {
+            var name = $(this).attr('name');
+            if (!name) return;
+            
+            if ($(this).is(':checkbox') || $(this).is(':radio')) {
+                if ($(this).is(':checked')) {
+                    if (!dataToSave.formData[name]) dataToSave.formData[name] = [];
+                    dataToSave.formData[name].push($(this).val());
+                }
+            } else {
+                dataToSave.formData[name] = $(this).val();
+            }
+        });
+
+        localStorage.setItem(storageKey, JSON.stringify(dataToSave));
+    }
+
+    function restoreProgress() {
+        if (!savedData) return;
+
+        var data = savedState.formData;
+        for (var name in data) {
+            var val = data[name];
+            var el = form.find('[name="' + name + '"]');
+            
+            if (el.is(':checkbox') || el.is(':radio')) {
+                el.each(function() {
+                    // Check if the current value is in our saved array
+                    if (Array.isArray(val) && val.includes($(this).val())) {
+                        $(this).prop('checked', true);
+                    } else if (val === $(this).val()) { // Fallback for single value
+                        $(this).prop('checked', true);
+                    }
+                });
+            } else {
+                el.val(val);
+            }
+        }
+        
+        // Trigger changes for dependent fields
+        if ($('#has_insurance_yes').is(':checked')) {
+            $('#current_coverage_container').slideDown();
+            $('#current_coverage_amount').prop('required', true);
+        }
+        
+        // Format phone again if needed
+        var phoneField = $('#user_phone');
+        if (phoneField.val()) phoneField.trigger('input');
+        
+        // Format Zip to State if needed
+        var zipField = $('#zip_code_initial');
+        if (zipField.val() && zipField.val().length === 5 && !$('#state_initial').val()) {
+            zipField.trigger('keyup');
+        }
+    }
 
     function showStep(step) {
         $('.rlq-form-step').hide();
@@ -101,26 +169,28 @@ jQuery(document).ready(function ($) {
                  }
              }
              
-             var errorDiv = $(this).closest('.rlq-form-group').find('.rlq-error-message');
-             if (hasError) {
-                 $(this).addClass('error');
-                 if(errorDiv.length) {
-                     errorDiv.text($(this).data('error-msg') || 'Invalid input').show();
-                 }
-             } else {
-                 $(this).removeClass('error');
-                 if(errorDiv.length) errorDiv.hide();
+        var errorDiv = $(this).closest('.rlq-form-group').find('.rlq-error-message');
+        if (hasError) {
+             $(this).addClass('error');
+             if(errorDiv.length) {
+                 errorDiv.text($(this).data('error-msg') || 'Invalid input').show();
              }
+        } else {
+             $(this).removeClass('error');
+             if(errorDiv.length) errorDiv.hide();
         }
-        
-        validateStep(section);
-    });
+    }
+    
+    validateStep(section);
+    saveProgress();
+});
 
     // Next/Prev Navigation
     form.on('click', '.rlq-next-step', function () {
         if (currentStep < totalSteps) {
             currentStep++;
             showStep(currentStep);
+            saveProgress();
         }
     });
 
@@ -128,6 +198,7 @@ jQuery(document).ready(function ($) {
         if (currentStep > 1) {
             currentStep--;
             showStep(currentStep);
+            saveProgress();
         }
     });
 
@@ -176,6 +247,7 @@ jQuery(document).ready(function ($) {
             }
         }
         validateStep($(this).closest('.rlq-form-step'));
+        saveProgress();
     });
 
     // Phone Mask Simple
@@ -186,6 +258,7 @@ jQuery(document).ready(function ($) {
     });
 
     // Setup initial step
+    restoreProgress();
     showStep(currentStep);
     
     // Final Submit Action
@@ -211,6 +284,9 @@ jQuery(document).ready(function ($) {
                 $('.rlq-stepper-container').slideUp();
                 $('.rlq-ms-left-panel').hide();
                 $('.rlq-ms-right-panel').css({'width': '100%', 'padding': '40px'});
+                
+                // Clear localStorage
+                localStorage.removeItem(storageKey);
             } else {
                 alert('There was an error submitting your quote. Please try again.');
                 btn.prop('disabled', false).text(originalText);

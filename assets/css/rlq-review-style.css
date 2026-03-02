@@ -696,7 +696,10 @@
 }
 
 .rlq-btn-checkbox:not(.block-checkbox) .btn-text {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 15px 20px;
   border: 2px solid #ddd;
   border-radius: 6px;
@@ -705,6 +708,8 @@
   color: #444;
   transition: all 0.3s ease;
   background-color: #fff;
+  min-height: 50px;
+  line-height: 1.2;
 }
 
 .rlq-btn-checkbox:not(.block-checkbox):has(input:checked) .btn-text,

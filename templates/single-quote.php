@@ -300,15 +300,15 @@ if (have_posts()) {
                                 <div class="rlq-form-step" data-step="8" style="display:none;">
                                     <h3>What is your individual annual income from salary and wages?</h3>
                                     <div class="rlq-grid-3">
-                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="Less than $50,000" required> <span class="btn-text">Less than $50,000</span></label>
-                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$50,000 - $99,999" required> <span class="btn-text">$50,000 - $99,999</span></label>
-                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$100,000 - $149,999" required> <span class="btn-text">$100,000 - $149,999</span></label>
-                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$150,000 - $199,999" required> <span class="btn-text">$150,000 - $199,999</span></label>
-                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$200,000 - $249,999" required> <span class="btn-text">$200,000 - $249,999</span></label>
-                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$250,000 - $299,999" required> <span class="btn-text">$250,000 - $299,999</span></label>
-                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$300,000 - $399,999" required> <span class="btn-text">$300,000 - $399,999</span></label>
-                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$400,000 - $499,999" required> <span class="btn-text">$400,000 - $499,999</span></label>
-                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="Over $500,000" required> <span class="btn-text">Over $500,000</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="Less than $50,000" required> <span class="btn-text">Less than<br>$50,000</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$50,000 - $99,999" required> <span class="btn-text">$50,000<br>$99,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$100,000 - $149,999" required> <span class="btn-text">$100,000<br>$149,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$150,000 - $199,999" required> <span class="btn-text">$150,000<br>$199,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$200,000 - $249,999" required> <span class="btn-text">$200,000<br>$249,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$250,000 - $299,999" required> <span class="btn-text">$250,000<br>$299,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$300,000 - $399,999" required> <span class="btn-text">$300,000<br>$399,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$400,000 - $499,999" required> <span class="btn-text">$400,000<br>$499,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="Over $500,000" required> <span class="btn-text">Over<br>$500,000</span></label>
                                     </div>
                                     <div class="rlq-form-actions">
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
