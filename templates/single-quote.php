@@ -196,6 +196,25 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step" style="visibility:hidden;">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Age</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Your age helps determine the right life insurance options for you. Life insurance is valuable 
+                                                at any stage of life, offering peace of mind and security for your loved ones.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="2" style="display:none;">
@@ -208,6 +227,24 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Gender</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Gender can influence life expectancy and help us find life insurance policies better aligned with your needs.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="3" style="display:none;">
@@ -222,6 +259,24 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Health</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Regardless of your age and current health, we can help match you with policies and carriers that align with your needs.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="4" style="display:none;">
@@ -246,6 +301,25 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Height and Weight</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Your height and weight help us better understand your health profile so we can recommend the most suitable coverage options. 
+                                                Even if you aren't in perfect health, we can help find coverage that works for you.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="5" style="display:none;">
@@ -262,6 +336,24 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Location</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Where you live helps us determine the life insurance products available in your state.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="6" style="display:none;">
@@ -281,6 +373,25 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Current Coverage</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Understanding your current coverage helps us determine any gaps and provide life insurance options that 
+                                                complement or enhance your existing coverage.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="7" style="display:none;">
@@ -295,6 +406,25 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary">Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About the Type of Life Insurance</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                The type of life insurance you’re interested in helps us match you with the best available options 
+                                                from the insurance carriers we partner with.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="8" style="display:none;">
@@ -314,6 +444,26 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Income</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                <b>This is the total amount you earn per year based on wages and salary before taxes.</b> Bonuses, commissions, freelance earnings, 
+                                                or other variable pay should be factored in to reflect actual annual income. However, 
+                                                this should not include any income from investments or retirement accounts.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="9" style="display:none;">
@@ -353,6 +503,25 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/star.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Recommended</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>At Least 10x Your Annual Income</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                To help ensure your loved ones are financially protected, we recommend choosing a coverage amount that 
+                                                provides long-term financial security.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="10" style="display:none;">
@@ -365,6 +534,25 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Smoking Habits</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Honesty about smoking and tobacco habits ensures the quotes you receive are as accurate as possible. We work with multiple 
+                                                insurance carriers that can help find affordable rates, even for smokers.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="11" style="display:none;">
@@ -372,52 +560,52 @@ if (have_posts()) {
                                     <div class="rlq-grid-3 rlq-conditions-grid">
                                         <label class="rlq-btn-checkbox block-checkbox">
                                             <input type="checkbox" name="conditions[]" value="Alcohol or Substance Abuse">
-                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/alcohol.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Alcoh'" alt="Icon">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/alcohol.svg'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Alcoh'" alt="Icon">
                                             <span class="btn-text">Alcohol or Substance Abuse</span>
                                         </label>
                                         <label class="rlq-btn-checkbox block-checkbox">
                                             <input type="checkbox" name="conditions[]" value="Asthma">
-                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/asthma.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Asthm'" alt="Icon">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/asthma.svg'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Asthm'" alt="Icon">
                                             <span class="btn-text">Asthma</span>
                                         </label>
                                         <label class="rlq-btn-checkbox block-checkbox">
                                             <input type="checkbox" name="conditions[]" value="Blood Pressure">
-                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/blood-pressure.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Blood'" alt="Icon">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/bloodpressure.svg'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Blood'" alt="Icon">
                                             <span class="btn-text">Blood Pressure</span>
                                         </label>
                                         <label class="rlq-btn-checkbox block-checkbox">
                                             <input type="checkbox" name="conditions[]" value="Cancer">
-                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/cancer.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Cance'" alt="Icon">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/cancer.svg'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Cance'" alt="Icon">
                                             <span class="btn-text">Cancer</span>
                                         </label>
                                         <label class="rlq-btn-checkbox block-checkbox">
                                             <input type="checkbox" name="conditions[]" value="Cholesterol">
-                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/cholesterol.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Choles'" alt="Icon">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/cholesterol.svg'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Choles'" alt="Icon">
                                             <span class="btn-text">Cholesterol</span>
                                         </label>
                                         <label class="rlq-btn-checkbox block-checkbox">
                                             <input type="checkbox" name="conditions[]" value="Depression or Anxiety">
-                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/depression.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Depre'" alt="Icon">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/depression.svg'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Depre'" alt="Icon">
                                             <span class="btn-text">Depression or Anxiety</span>
                                         </label>
                                         <label class="rlq-btn-checkbox block-checkbox">
                                             <input type="checkbox" name="conditions[]" value="Diabetes">
-                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/diabetes.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Diabe'" alt="Icon">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/diabetes.svg'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Diabe'" alt="Icon">
                                             <span class="btn-text">Diabetes</span>
                                         </label>
                                         <label class="rlq-btn-checkbox block-checkbox">
                                             <input type="checkbox" name="conditions[]" value="Heart issue">
-                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/heart.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Heart'" alt="Icon">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/heartissue.svg'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Heart'" alt="Icon">
                                             <span class="btn-text">Heart issue</span>
                                         </label>
                                         <label class="rlq-btn-checkbox block-checkbox">
                                             <input type="checkbox" name="conditions[]" value="Sleep Apnea">
-                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/sleep-apnea.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Apnea'" alt="Icon">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/sleepapnea.svg'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Apnea'" alt="Icon">
                                             <span class="btn-text">Sleep Apnea</span>
                                         </label>
                                         <label class="rlq-btn-checkbox block-checkbox none-of-these">
                                             <input type="checkbox" name="conditions[]" value="None of these" class="none-of-these-cb">
-                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/none.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=None'" alt="Icon">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/none-of-these.svg'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=None'" alt="Icon">
                                             <span class="btn-text">None of these</span>
                                         </label>
                                     </div>
@@ -425,6 +613,25 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Medical History</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Your medical history helps us match you with quotes that consider your health history. We work with multiple insurance carriers 
+                                                that can help find affordable rates, even for those with health concerns.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="12" style="display:none;">
@@ -437,6 +644,25 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Driving Record</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Your driving record helps assess risk and find coverage suitable for you. We can help you find the right coverage, 
+                                                even if your record isn’t perfect.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="13" style="display:none;">
@@ -450,6 +676,25 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About High-Risk Activities</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Engaging in high-risk activities means it’s even more important to have the right coverage. 
+                                                We’ll ensure you’re fully protected, no matter your lifestyle.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="14" style="display:none;">
@@ -462,6 +707,25 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Family Medical History</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Family health history helps us understand your potential health risks, allowing us to recommend policies 
+                                                that are right for you.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="15" style="display:none;">
@@ -484,6 +748,25 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Contact Information</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Your name and email allow us to send you information about your quote. This email will also be used for your policy, 
+                                                should you decide to move forward.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="16" style="display:none;">
@@ -506,23 +789,44 @@ if (have_posts()) {
                                         <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
                                         <button type="button" class="rlq-btn rlq-submit-btn primary" disabled>Get My Quote</button>
                                     </div>
+
+                                    <div class="educational-content mt-5">
+                                        <span class="label">
+                                            <div class="d-flex gap-2 flex-lg-row flex-column align-items-center educational-content-label-card">
+                                                <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/question.svg'; ?>" alt="Question icon" style="width:16px;height:16px;max-width:100%" class="question-icon" loading="lazy">
+                                                <div class="richtext w-100 text-left" style="color:#000000">
+                                                    <p class="richtext-paragraph">Why We Ask</p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <h3>About Your Address</h3>
+                                        <span class="label">
+                                            <p class="richtext-paragraph">
+                                                Your address helps us complete your application and may influence your premium. We ensure this 
+                                                information is used to get you the best coverage available.
+                                            </p>
+                                        </span>
+                                    </div>
+
                                 </div>
 
                                 <div class="rlq-form-step" data-step="17" style="display:none; text-align:center;">
                                     <h3 style="color:#2ecc71;">A RiseLifeQuotes Agent will be in touch soon.</h3>
                                     <p>A RiseLifeQuotes licensed insurance agent is reviewing your request and will be in touch as early as possible to discuss your insurance review.</p>
                                     
-                                    <div class="rlq-cards-container" style="margin-top:30px; display:flex; flex-direction:column; gap:20px;">
-                                        <div class="rlq-final-card" style="border:1px solid #ddd; padding:20px; border-radius:8px; background:#f9f9f9;">
+                                    <div class="rlq-cards-container" style="margin-top:30px; display:flex; gap:20px;">
+                                        <div class="rlq-final-card" style="border:1px solid #ddd; padding:20px; border-radius:8px; background:#f9f9f9; flex:1;">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/phone.svg'; ?>" alt="Phone icon" class="img-step17" loading="lazy">
                                             <h4>Accelerate Your Application</h4>
                                             <p>Get personalized assistance from one of our licensed agents.</p>
-                                            <h3 style="margin-top:10px; color:#3498db;"><a href="tel:1-877-830-7567" style="text-decoration:none; color:inherit;">Call 1-877-830-7567</a></h3>
+                                            <h3 style="margin-top:10px; color:#3498db;"><a href="tel:1-111-111-1111" style="text-decoration:none; color:inherit;">Call 1-111-111-1111</a></h3>
                                         </div>
                                         
-                                        <div class="rlq-final-card" style="border:1px solid #ddd; padding:20px; border-radius:8px; background:#f9f9f9;">
+                                        <div class="rlq-final-card" style="border:1px solid #ddd; padding:20px; border-radius:8px; background:#f9f9f9; flex:1;">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/chat.svg'; ?>" alt="Chat icon" class="img-step17" loading="lazy">
                                             <h4>Prefer to Chat with a Specialist?</h4>
                                             <p>Connect with a live Chat Specialist to confirm your quote.</p>
-                                            <button type="button" class="rlq-btn primary" style="margin-top:15px; width:auto; display:inline-block; padding:10px 20px;">Click to chat with a Specialist</button>
+                                            <a href="/contact" class="rlq-btn primary" style="margin-top:15px; width:auto; display:inline-block; padding:10px 20px; text-decoration:none;">Click to chat with a Specialist</a>
                                         </div>
                                     </div>
                                     

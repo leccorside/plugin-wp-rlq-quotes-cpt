@@ -269,7 +269,9 @@ jQuery(document).ready(function ($) {
         var originalText = btn.text();
         btn.prop('disabled', true).text('Sending...');
         
-        var formData = form.serialize() + '&action=submit_rlq_quote';
+        // Include the page title in the data
+        var pageTitle = document.title;
+        var formData = form.serialize() + '&action=submit_rlq_quote&page_title=' + encodeURIComponent(pageTitle);
         
         $.post(rlqAjax.ajax_url, formData, function(response) {
             if (response.success) {

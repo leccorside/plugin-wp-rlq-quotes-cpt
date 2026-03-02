@@ -75,7 +75,6 @@
   align-items: center;
   position: relative;
   margin-bottom: 40px;
-  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -150,6 +149,7 @@
 
 .rlq-form-control {
   width: 100%;
+  height: 48px;
   padding: 12px 15px;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -767,9 +767,81 @@
 }
 
 .rlq-btn-checkbox.block-checkbox .btn-text {
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 500;
 }
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.gap-2 {
+  gap: .5rem !important;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.d-flex {
+  display: flex !important;
+}
+
+.educational-content {
+  width: 100%;
+  padding: 20px 18px;
+  gap: 24px;
+  border-radius: 5px 0 0 0;
+  background-color: #f9f9fb;
+  box-shadow: 0 3px 8px 0 rgba(49,47,47,.141);
+}
+
+.educational-content .label .educational-content-label-card {
+  flex-direction: row !important;
+  margin-bottom: 9px;
+}
+
+.quote-form-section .bottom-copy, .richtext, .top-copy {
+  font-size: 14px;
+}
+
+.educational-content .label .educational-content-label-card p {
+  color: #312f2f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+.educational-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #312f2f;
+  line-height: 16px;
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.richtext-paragraph{
+  font-size: 12px;
+}
+
+.img-step17 {
+  width: 50px;
+  height: 50px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+@media (max-width: 768px) {
+  .rlq-cards-container {
+    flex-direction: column;
+  }
+}
+
 
 @media (max-width: 768px) {
   .third-width {
