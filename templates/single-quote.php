@@ -84,92 +84,456 @@ if (have_posts()) {
                         <div class="rlq-ms-right-panel">
                             <h2>Get you price estimate</h2>
 
+                            
                             <!-- Stepper -->
                             <div class="rlq-stepper-container">
                                 <div class="rlq-stepper-line">
                                     <div class="rlq-stepper-progress-bar"></div>
                                 </div>
+
                                 <div class="rlq-step-indicator active" data-step="1">
-                                    <div class="rlq-step-icon"><i class="fas fa-folder"></i></div>
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
                                 </div>
-                                <div class="rlq-step-indicator" data-step="2">
-                                    <div class="rlq-step-icon"><i class="fas fa-pencil-alt"></i></div>
+
+                                <div class="rlq-step-indicator " data-step="2">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
                                 </div>
-                                <div class="rlq-step-indicator" data-step="3">
-                                    <div class="rlq-step-icon"><i class="fas fa-image"></i></div>
+
+                                <div class="rlq-step-indicator " data-step="3">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
                                 </div>
-                                <div class="rlq-step-indicator" data-step="4">
+
+                                <div class="rlq-step-indicator " data-step="4">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="5">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="6">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="7">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="8">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="9">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="10">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="11">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="12">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="13">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="14">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="15">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="16">
+                                    <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
+                                </div>
+
+                                <div class="rlq-step-indicator " data-step="17">
                                     <div class="rlq-step-icon"><i class="fas fa-check"></i></div>
                                 </div>
                             </div>
 
-                            <form id="rlq-multi-step-form">
-                                <?php for ($i = 1; $i <= 4; $i++): ?>
-                                    <div class="rlq-form-step" data-step="<?php echo $i; ?>"
-                                        style="<?php echo $i > 1 ? 'display:none;' : ''; ?>">
+                            <form id="rlq-multi-step-form" novalidate>
 
-                                        <div class="rlq-form-row">
-                                            <div class="rlq-form-group half-width">
-                                                <!-- <label>Height</label> -->
-                                                <select name="height_<?php echo $i; ?>" class="rlq-form-control" required>
-                                                    <option value="">Height</option>
-                                                    <option value="5'0">5'0"</option>
-                                                    <option value="5'1">5'1"</option>
-                                                    <!-- Add more options if needed -->
-                                                </select>
-                                            </div>
-                                            <div class="rlq-form-group half-width">
-                                                <!-- <label>Weight</label> -->
-                                                <input type="number" name="weight_<?php echo $i; ?>" class="rlq-form-control"
-                                                    placeholder="Weight" required>
-                                            </div>
+                                <div class="rlq-form-step" data-step="1">
+                                    <h3>When were you born?</h3>
+                                    <div class="rlq-form-row">
+                                        <div class="rlq-form-group third-width">
+                                            <select name="dob_month" id="dob_month" class="rlq-form-control" required data-error-msg="Please select a month.">
+                                                <option value="">Month</option>
+                                                <option value="01">01 - January</option>
+                                                <option value="02">02 - February</option>
+                                                <option value="03">03 - March</option>
+                                                <option value="04">04 - April</option>
+                                                <option value="05">05 - May</option>
+                                                <option value="06">06 - June</option>
+                                                <option value="07">07 - July</option>
+                                                <option value="08">08 - August</option>
+                                                <option value="09">09 - September</option>
+                                                <option value="10">10 - October</option>
+                                                <option value="11">11 - November</option>
+                                                <option value="12">12 - December</option>
+                                            </select>
                                         </div>
-
-                                        <div class="rlq-form-row">
-                                            <div class="rlq-form-group half-width">
-                                                <!-- <label>Sex</label> -->
-                                                <select name="sex_<?php echo $i; ?>" class="rlq-form-control" required>
-                                                    <option value="">Sex</option>
-                                                    <option value="Male">Male</option>
-                                                    <option value="Female">Female</option>
-                                                </select>
-                                            </div>
-                                            <div class="rlq-form-group half-width">
-                                                <!-- <label>Date of birth</label> -->
-                                                <input type="text" name="dob_<?php echo $i; ?>" class="rlq-form-control"
-                                                    placeholder="Date of birth" onfocus="(this.type='date')" required>
-                                            </div>
+                                        <div class="rlq-form-group third-width">
+                                            <select name="dob_day" id="dob_day" class="rlq-form-control" required data-error-msg="Please select a day.">
+                                                <option value="">Day</option>
+                                                <option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+                                            </select>
                                         </div>
-
-                                        <div class="rlq-form-group">
-                                            <label style="font-size:12px; margin-bottom:5px; display:block; color:#555;">Which state
-                                                do you live in?</label>
-                                            <div class="rlq-select-wrapper-state">
-                                                <select name="state_<?php echo $i; ?>" class="rlq-form-control" required>
-                                                    <option value="">Select State</option>
-                                                    <option value="CA">California (CA)</option>
-                                                    <!-- Add more states -->
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="rlq-form-actions">
-                                            <?php if ($i > 1): ?>
-                                                <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
-                                            <?php else: ?>
-                                                <button type="button" class="rlq-btn rlq-prev-step"
-                                                    style="visibility:hidden;">Previous</button>
-                                            <?php endif; ?>
-
-                                            <?php if ($i < 4): ?>
-                                                <button type="button" class="rlq-btn rlq-next-step primary">Save and continue</button>
-                                            <?php else: ?>
-                                                <button type="submit" class="rlq-btn rlq-submit-btn primary">Get My Quote</button>
-                                            <?php endif; ?>
+                                        <div class="rlq-form-group third-width">
+                                            <input type="text" name="dob_year" id="dob_year" class="rlq-form-control" placeholder="Year" maxlength="4" pattern="\d{4}" required data-error-msg="Please enter a valid year.">
                                         </div>
                                     </div>
-                                <?php endfor; ?>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step" style="visibility:hidden;">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="2" style="display:none;">
+                                    <h3>What is your gender?</h3>
+                                    <div class="rlq-form-group rlq-radio-group-vertical">
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="gender" value="Male" required> <span class="btn-text">Male</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="gender" value="Female" required> <span class="btn-text">Female</span></label>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="3" style="display:none;">
+                                    <h3>How would you rate your overall health?</h3>
+                                    <div class="rlq-form-group rlq-radio-group-vertical">
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="health_rating" value="Excellent" required> <span class="btn-text">Excellent</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="health_rating" value="Above Average" required> <span class="btn-text">Above Average</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="health_rating" value="Average" required> <span class="btn-text">Average</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="health_rating" value="Below Average" required> <span class="btn-text">Below Average</span></label>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="4" style="display:none;">
+                                    <h3>What is your height and weight?</h3>
+                                    <p style="font-size:14px; margin-bottom:10px;">Current Height</p>
+                                    <div class="rlq-form-row">
+                                        <div class="rlq-form-group half-width">
+                                            <input type="number" name="height_ft" id="height_ft" class="rlq-form-control" placeholder="ft" min="4" max="7" required data-error-msg="Please enter a number between 4 and 7.">
+                                            <div class="rlq-error-message text-danger" style="color:red; font-size:12px; display:none; margin-top:5px;"></div>
+                                        </div>
+                                        <div class="rlq-form-group half-width">
+                                            <input type="number" name="height_in" id="height_in" class="rlq-form-control" placeholder="inches" min="0" max="11" required data-error-msg="Please enter a number between 0 and 11.">
+                                            <div class="rlq-error-message text-danger" style="color:red; font-size:12px; display:none; margin-top:5px;"></div>
+                                        </div>
+                                    </div>
+                                    <p style="font-size:14px; margin-bottom:10px; margin-top:20px;">Current Weight</p>
+                                    <div class="rlq-form-group">
+                                        <input type="number" name="weight_lbs" id="weight_lbs" class="rlq-form-control" placeholder="lbs" min="100" max="800" required data-error-msg="Please enter a number between 100-800 lbs.">
+                                        <div class="rlq-error-message text-danger" style="color:red; font-size:12px; display:none; margin-top:5px;"></div>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="5" style="display:none;">
+                                    <h3>Where do you live?</h3>
+                                    <div class="rlq-form-group">
+                                        <label>Zip</label>
+                                        <input type="text" name="zip_code_initial" id="zip_code_initial" class="rlq-form-control" placeholder="Enter here" maxlength="5" pattern="\d{5}" required>
+                                    </div>
+                                    <div class="rlq-form-group">
+                                        <label>State</label>
+                                        <input type="text" name="state_initial" id="state_initial" class="rlq-form-control readonly-input" readonly>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="6" style="display:none;">
+                                    <h3>Do you have life insurance now?</h3>
+                                    <div class="rlq-form-group rlq-radio-group-vertical">
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="has_insurance" value="Yes" required id="has_insurance_yes"> <span class="btn-text">Yes</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="has_insurance" value="No" required id="has_insurance_no"> <span class="btn-text">No</span></label>
+                                    </div>
+                                    
+                                    <div class="rlq-conditional-field" id="current_coverage_container" style="display:none; margin-top:20px;">
+                                        <label>Current Coverage Amount</label>
+                                        <input type="number" name="current_coverage_amount" id="current_coverage_amount" class="rlq-form-control" placeholder="Coverage Amount" data-error-msg="Please enter your current coverage amount.">
+                                        <div class="rlq-error-message text-danger" style="color:red; font-size:12px; display:none; margin-top:5px;"></div>
+                                    </div>
+                                    
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="7" style="display:none;">
+                                    <h3>What type of insurance are you looking for? Check all that apply. (Optional)</h3>
+                                    <div class="rlq-form-group rlq-checkbox-group-vertical">
+                                        <label class="rlq-btn-checkbox"><input type="checkbox" name="insurance_type[]" value="Term"> <span class="btn-text">Term</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="checkbox" name="insurance_type[]" value="Permanent"> <span class="btn-text">Permanent</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="checkbox" name="insurance_type[]" value="Final Expense"> <span class="btn-text">Final Expense</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="checkbox" name="insurance_type[]" value="I'm not sure"> <span class="btn-text">I'm not sure</span></label>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary">Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="8" style="display:none;">
+                                    <h3>What is your individual annual income from salary and wages?</h3>
+                                    <div class="rlq-grid-3">
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="Less than $50,000" required> <span class="btn-text">Less than $50,000</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$50,000 - $99,999" required> <span class="btn-text">$50,000 - $99,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$100,000 - $149,999" required> <span class="btn-text">$100,000 - $149,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$150,000 - $199,999" required> <span class="btn-text">$150,000 - $199,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$200,000 - $249,999" required> <span class="btn-text">$200,000 - $249,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$250,000 - $299,999" required> <span class="btn-text">$250,000 - $299,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$300,000 - $399,999" required> <span class="btn-text">$300,000 - $399,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="$400,000 - $499,999" required> <span class="btn-text">$400,000 - $499,999</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="annual_income" value="Over $500,000" required> <span class="btn-text">Over $500,000</span></label>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="9" style="display:none;">
+                                    <h3>How much coverage are you looking for?</h3>
+                                    <div class="rlq-form-group">
+                                        <label>Amount of coverage</label>
+                                        <select name="target_coverage_amount" class="rlq-form-control" required>
+                                            <option value="">Please select</option>
+                                            <option value="$0 - $49,999">$0 - $49,999</option>
+                                            <option value="$50,000 - $99,999">$50,000 - $99,999</option>
+                                            <option value="$100,000 - $199,999">$100,000 - $199,999</option>
+                                            <option value="$200,000 - $299,999">$200,000 - $299,999</option>
+                                            <option value="$300,000 - $399,999">$300,000 - $399,999</option>
+                                            <option value="$400,000 - $499,999">$400,000 - $499,999</option>
+                                            <option value="$500,000 - $599,999">$500,000 - $599,999</option>
+                                            <option value="$600,000 - $699,999">$600,000 - $699,999</option>
+                                            <option value="$700,000 - $799,999">$700,000 - $799,999</option>
+                                            <option value="$800,000 - $899,999">$800,000 - $899,999</option>
+                                            <option value="$900,000 - $999,999">$900,000 - $999,999</option>
+                                            <option value="$1,000,000 - $1,499,999">$1,000,000 - $1,499,999</option>
+                                            <option value="$1,500,000 - $1,999,999">$1,500,000 - $1,999,999</option>
+                                            <option value="$2,000,000 - $4,999,999">$2,000,000 - $4,999,999</option>
+                                            <option value="$5,000,000 or greater">$5,000,000 or greater</option>
+                                        </select>
+                                    </div>
+                                    <div class="rlq-form-group">
+                                        <label>Term Length</label>
+                                        <select name="term_length" class="rlq-form-control" required>
+                                            <option value="">Please select</option>
+                                            <option value="10 Years">10 Years</option>
+                                            <option value="15 Years">15 Years</option>
+                                            <option value="20 Years">20 Years</option>
+                                            <option value="30 Years">30 Years</option>
+                                        </select>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="10" style="display:none;">
+                                    <h3>Do you currently smoke cigarettes or e-cigarettes?</h3>
+                                    <div class="rlq-form-group rlq-radio-group-vertical">
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="smoker" value="Yes" required> <span class="btn-text">Yes</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="smoker" value="No" required> <span class="btn-text">No</span></label>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="11" style="display:none;">
+                                    <h3>Check all conditions for which you've been treated:</h3>
+                                    <div class="rlq-grid-3 rlq-conditions-grid">
+                                        <label class="rlq-btn-checkbox block-checkbox">
+                                            <input type="checkbox" name="conditions[]" value="Alcohol or Substance Abuse">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/alcohol.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Alcoh'" alt="Icon">
+                                            <span class="btn-text">Alcohol or Substance Abuse</span>
+                                        </label>
+                                        <label class="rlq-btn-checkbox block-checkbox">
+                                            <input type="checkbox" name="conditions[]" value="Asthma">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/asthma.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Asthm'" alt="Icon">
+                                            <span class="btn-text">Asthma</span>
+                                        </label>
+                                        <label class="rlq-btn-checkbox block-checkbox">
+                                            <input type="checkbox" name="conditions[]" value="Blood Pressure">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/blood-pressure.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Blood'" alt="Icon">
+                                            <span class="btn-text">Blood Pressure</span>
+                                        </label>
+                                        <label class="rlq-btn-checkbox block-checkbox">
+                                            <input type="checkbox" name="conditions[]" value="Cancer">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/cancer.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Cance'" alt="Icon">
+                                            <span class="btn-text">Cancer</span>
+                                        </label>
+                                        <label class="rlq-btn-checkbox block-checkbox">
+                                            <input type="checkbox" name="conditions[]" value="Cholesterol">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/cholesterol.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Choles'" alt="Icon">
+                                            <span class="btn-text">Cholesterol</span>
+                                        </label>
+                                        <label class="rlq-btn-checkbox block-checkbox">
+                                            <input type="checkbox" name="conditions[]" value="Depression or Anxiety">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/depression.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Depre'" alt="Icon">
+                                            <span class="btn-text">Depression or Anxiety</span>
+                                        </label>
+                                        <label class="rlq-btn-checkbox block-checkbox">
+                                            <input type="checkbox" name="conditions[]" value="Diabetes">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/diabetes.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Diabe'" alt="Icon">
+                                            <span class="btn-text">Diabetes</span>
+                                        </label>
+                                        <label class="rlq-btn-checkbox block-checkbox">
+                                            <input type="checkbox" name="conditions[]" value="Heart issue">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/heart.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Heart'" alt="Icon">
+                                            <span class="btn-text">Heart issue</span>
+                                        </label>
+                                        <label class="rlq-btn-checkbox block-checkbox">
+                                            <input type="checkbox" name="conditions[]" value="Sleep Apnea">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/sleep-apnea.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=Apnea'" alt="Icon">
+                                            <span class="btn-text">Sleep Apnea</span>
+                                        </label>
+                                        <label class="rlq-btn-checkbox block-checkbox none-of-these">
+                                            <input type="checkbox" name="conditions[]" value="None of these" class="none-of-these-cb">
+                                            <img src="<?php echo plugin_dir_url(__DIR__) . 'assets/img/icons/none.png'; ?>" onerror="this.src='https://placehold.co/40x40/f0f0f0/666?text=None'" alt="Icon">
+                                            <span class="btn-text">None of these</span>
+                                        </label>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="12" style="display:none;">
+                                    <h3>Have you had more than 3 driving violations in the past 3 years?</h3>
+                                    <div class="rlq-form-group rlq-radio-group-vertical">
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="driving_violations" value="Yes" required> <span class="btn-text">Yes</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="driving_violations" value="No" required> <span class="btn-text">No</span></label>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="13" style="display:none;">
+                                    <h3>Do you currently engage in any of these sports or activities?</h3>
+                                    <p style="font-size:14px; margin-bottom:15px;">Piloting aircraft, Bungee jumping, Mountain & rock climbing, Hang gliding, Scuba diving, Skydiving</p>
+                                    <div class="rlq-form-group rlq-radio-group-vertical">
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="dangerous_activities" value="Yes" required> <span class="btn-text">Yes</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="dangerous_activities" value="No" required> <span class="btn-text">No</span></label>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="14" style="display:none;">
+                                    <h3>Did your parents or siblings have heart disease, cancer, stroke, or diabetes before age 65?</h3>
+                                    <div class="rlq-form-group rlq-radio-group-vertical">
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="family_history" value="Yes" required> <span class="btn-text">Yes</span></label>
+                                        <label class="rlq-btn-checkbox"><input type="radio" name="family_history" value="No" required> <span class="btn-text">No</span></label>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="15" style="display:none;">
+                                    <h3>Who are we preparing this quote for?</h3>
+                                    <div class="rlq-form-row">
+                                        <div class="rlq-form-group half-width">
+                                            <input type="text" name="first_name" id="first_name" class="rlq-form-control" placeholder="First name" required>
+                                        </div>
+                                        <div class="rlq-form-group half-width">
+                                            <input type="text" name="last_name" id="last_name" class="rlq-form-control" placeholder="Last name" required>
+                                        </div>
+                                    </div>
+                                    <div class="rlq-form-group">
+                                        <input type="email" name="user_email" id="user_email" class="rlq-form-control" placeholder="Email" required>
+                                    </div>
+                                    <div class="rlq-form-group">
+                                        <input type="tel" name="user_phone" id="user_phone" class="rlq-form-control phone-mask" placeholder="(000) 000-0000" pattern="\(\d{3}\)\s?\d{3}-\d{4}" required>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-next-step primary" disabled>Next</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="16" style="display:none;">
+                                    <h3>Where do you live?</h3>
+                                    <div class="rlq-form-group">
+                                        <input type="text" name="address" id="address" class="rlq-form-control" placeholder="Address" required>
+                                    </div>
+                                    <div class="rlq-form-group">
+                                        <input type="text" name="city" id="city" class="rlq-form-control" placeholder="City" required>
+                                    </div>
+                                    <div class="rlq-form-row">
+                                        <div class="rlq-form-group half-width">
+                                            <input type="text" name="state" id="state" class="rlq-form-control" placeholder="State" required>
+                                        </div>
+                                        <div class="rlq-form-group half-width">
+                                            <input type="text" name="zip_code" id="zip_code" class="rlq-form-control" placeholder="ZIP" required>
+                                        </div>
+                                    </div>
+                                    <div class="rlq-form-actions">
+                                        <button type="button" class="rlq-btn rlq-prev-step">Previous</button>
+                                        <button type="button" class="rlq-btn rlq-submit-btn primary" disabled>Get My Quote</button>
+                                    </div>
+                                </div>
+
+                                <div class="rlq-form-step" data-step="17" style="display:none; text-align:center;">
+                                    <h3 style="color:#2ecc71;">A RiseLifeQuotes Agent will be in touch soon.</h3>
+                                    <p>A RiseLifeQuotes licensed insurance agent is reviewing your request and will be in touch as early as possible to discuss your insurance review.</p>
+                                    
+                                    <div class="rlq-cards-container" style="margin-top:30px; display:flex; flex-direction:column; gap:20px;">
+                                        <div class="rlq-final-card" style="border:1px solid #ddd; padding:20px; border-radius:8px; background:#f9f9f9;">
+                                            <h4>Accelerate Your Application</h4>
+                                            <p>Get personalized assistance from one of our licensed agents.</p>
+                                            <h3 style="margin-top:10px; color:#3498db;"><a href="tel:1-877-830-7567" style="text-decoration:none; color:inherit;">Call 1-877-830-7567</a></h3>
+                                        </div>
+                                        
+                                        <div class="rlq-final-card" style="border:1px solid #ddd; padding:20px; border-radius:8px; background:#f9f9f9;">
+                                            <h4>Prefer to Chat with a Specialist?</h4>
+                                            <p>Connect with a live Chat Specialist to confirm your quote.</p>
+                                            <button type="button" class="rlq-btn primary" style="margin-top:15px; width:auto; display:inline-block; padding:10px 20px;">Click to chat with a Specialist</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div style="margin-top:30px; padding-top:20px; border-top:1px solid #eee;">
+                                        <p>Confirmation email was sent to: <strong id="display_email">email@gmail.com</strong></p>
+                                        <p style="margin-top:15px;"><a href="javascript:location.reload();">Click here</a> to start a new quote for someone else over the age of 18.</p>
+                                        <p style="margin-top:10px;"><a href="/">Return to Home</a></p>
+                                    </div>
+                                </div>
                             </form>
+
                         </div>
                     </div>
                 </div>

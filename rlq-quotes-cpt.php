@@ -52,6 +52,8 @@ require_once plugin_dir_path(__FILE__) . 'includes/rewrite-rules.php';
 require_once plugin_dir_path(__FILE__) . 'includes/template-loader.php';
 require_once plugin_dir_path(__FILE__) . 'includes/customizer.php';
 require_once plugin_dir_path(__FILE__) . 'includes/shortcodes.php';
+require_once plugin_dir_path(__FILE__) . 'includes/settings.php';
+require_once plugin_dir_path(__FILE__) . 'includes/ajax-handler.php';
 
 /**
  * Enqueue Styles for Review Page.
@@ -63,6 +65,7 @@ function rlq_enqueue_review_styles()
 		wp_enqueue_style('rlq-review-style', plugin_dir_url(__FILE__) . 'assets/css/rlq-review-style.css', array(), RLQ_QUOTES_CPT_VERSION);
 		wp_enqueue_script('rlq-review-slider', plugin_dir_url(__FILE__) . 'assets/js/rlq-review-slider.js', array('jquery'), RLQ_QUOTES_CPT_VERSION, true);
 		wp_enqueue_script('rlq-multi-step-form', plugin_dir_url(__FILE__) . 'assets/js/rlq-multi-step-form.js', array('jquery'), RLQ_QUOTES_CPT_VERSION, true);
+		wp_localize_script('rlq-multi-step-form', 'rlqAjax', array('ajax_url' => admin_url('admin-ajax.php')));
 		// Enqueue Font Awesome if not already present
 		wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', array(), '6.4.0');
 	}
